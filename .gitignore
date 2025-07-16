@@ -1,0 +1,138 @@
+# =========================
+# 📁 Django & Python
+# =========================
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+.env
+.env.local
+.env.dev
+.env.production
+venv/
+ENV/
+env/
+instance/
+settings.pyc
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Secret config & credentials
+secrets.json
+secret_key
+config.ini
+private.key
+*.pem
+
+# =========================
+# 📁 React Frontend
+# =========================
+# Node modules
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+build/
+dist/
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Redux/React DevTools files
+redux-devtools-extension/
+
+# =========================
+# 📁 Docker & CI/CD
+# =========================
+# Docker
+Dockerfile
+docker-compose*.yml
+*.pid
+**/tmp/
+**/cache/
+**/__pycache__/
+**/.pytest_cache/
+celerybeat-schedule
+celerybeat.pid
+
+# Ignore Docker volumes
+volumes/
+*.tar
+*.bak
+
+# =========================
+# 📁 PostgreSQL
+# =========================
+*.sql
+*.dump
+*.pgsql
+.pgdata/
+pgdata/
+*.backup
+
+# =========================
+# 📁 Reports, PDFs, Exported Data
+# =========================
+*.xlsx
+*.xls
+*.pdf
+*.csv
+
+# =========================
+# 📁 Python Testing
+# =========================
+coverage/
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.mocha.json
+.pyre/
+
+# =========================
+# 📁 System Files
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*.swn
+
+# =========================
+# 📁 JetBrains IDEs (PyCharm, WebStorm, etc.)
+# =========================
+.idea/
+*.iml
+
+# =========================
+# 📁 Logs
+# =========================
+*.log
+logs/
+log/
+*.pid
+
