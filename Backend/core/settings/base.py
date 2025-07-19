@@ -1,5 +1,6 @@
 from pathlib import Path
-from decouple import config, Csv
+from decouple import config
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 BACKEND_DIR = BASE_DIR / 'Backend'
@@ -75,13 +76,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 USE_I18N = True
 USE_TZ = True
 
 # Static and media files
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+ALLOWED_DOCUMENT_TYPES = ['.jpg', '.jpeg', '.png', '.pdf']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
